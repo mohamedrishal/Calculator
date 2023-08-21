@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- fontawosome -->
+    <script src="https://kit.fontawesome.com/93bd807cf5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+        <div class="calcu-size">
+            <div>
+                <div class=""> 
+                    <input placeholder="0" id="result" type="text" class="display" readonly>
+                </div>
+            </div>
+            <div class="calcu-button-row">
+    
+                <div class="row_1">
+                    <button id="" onclick="display('(')"> ( </button>
+                    <button id="" onclick="display(')')"> ) </button>
+                    <button id="" onclick="allClear()">AC </button> 
+                    <button id="" onclick="display('/')" class="actions"> / </button>
+                </div>
+
+                <div class="row_2">
+                    <button id="seven" onclick="display('7')"> 7 </button>
+                    <button id="eight" onclick="display('8')"> 8 </button>
+                    <button id="nine" onclick="display('9')"> 9 </button>
+                    <button id="mul" onclick="display('x')" class="actions"> x </button>
+                </div>
+
+                <div class="row_3">
+                    <button id="four" onclick="display('4')"> 4 </button>
+                    <button id="five" onclick="display('5')"> 5 </button>
+                    <button id="six" onclick="display('6')"> 6 </button>
+                    <button id="sub" onclick="display('-')" class="actions"> - </button>
+                </div>
+
+                <div class="row_4">
+                    <button id="one" onclick="display('1')"> 1 </button>
+                    <button id="two" onclick="display('2')"> 2 </button>
+                    <button id="three" onclick="display('3')"> 3 </button>
+                    <button id="add" onclick="display('+')" class="actions"> + </button>
+                </div>
+    
+                <div class="row_5">
+                    <button id="zero" onclick="display('0')"> 0 </button>
+                    <button id="clear" onclick="lastClear()"> <i class="fa-solid fa-delete-left"></i> </button>
+                    <button id="" onclick="display('')" class="exp"> exp </button>
+                    <button id="equal" onclick="exprEval()" class="actions sum"> = </button>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="main.js"></script>
+</html>
